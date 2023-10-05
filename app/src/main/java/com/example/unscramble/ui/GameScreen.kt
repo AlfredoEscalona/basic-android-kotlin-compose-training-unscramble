@@ -53,6 +53,7 @@ import androidx.compose.ui.unit.sp
 import com.example.unscramble.R
 import com.example.unscramble.ui.theme.UnscrambleTheme
 
+
 @Composable
 fun GameScreen() {
     val mediumPadding = dimensionResource(R.dimen.padding_medium)
@@ -219,6 +220,6 @@ private fun FinalScoreDialog(
 @Composable
 fun GameScreenPreview() {
     UnscrambleTheme {
-        GameScreen()
+        GameScreen(gameViewModel)
     }
 }
